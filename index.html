@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <title>Wissesneakers</title>
+  </head>
+  <body>
+    <h1>Wissesneakers</h1>
+    <h2>Home</h2>
 
-<h1>My eerste Heading</h1>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="bts.html">Behind the Sneaker</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-<p>My first paragraph.</p>
+  <div class="links"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+<div class="rechts"><span style="font-size:30px;cursor:pointer"><img src="https://www.waepen.nl/wp-content/uploads/2020/12/white-shopping-cart-icon-9.png" class="winkelkar"></img></span></div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
-</body>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
+
+<img class="homeimg" src="https://static01.nyt.com/images/2021/05/27/fashion/24SNEAKERCOLORS-sacai-SUB/24SNEAKERCOLORS-sacai-SUB-facebookJumbo.jpg"></img>
+
+</br></br>
+
+<p class="hometekst">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+</p>
+
+<hr style="width:55vw", size="3", color=white>
+
+<div class="newsletter">
+
+  <p class="newslettertitel">Free Shipping on your first order!</p>
+  <p class="newslettersub">Sign up for the newsletter!</p>
+
+<form>
+  <input style="width:30vw;" type="text" name="email" class="newsletter" placeholder="Enter email" autocomplete="off">
+</form>
+
+<form>
+ <input type="radio" class="gender" name="gender" value="male">
+<label for="male" class="genderlabel">Male</label>
+<input type="radio" class="female" name="gender" value="female">
+<label for="female" class="genderlabel">Female</label>
+<input type="radio" class="gender" name="gender" value="other">
+<label for="other" class="genderlabel">Other</label>
+</form>
+
+<form>
+  <input type="checkbox" value="Accept privacy terms" style="margin-top:1.5vh;">
+  <label class="genderlabel">Accept <u style="color:white;cursor:pointer;">privacy</u> terms</label>
+  <input type="button" value="Sign Up" class="signupbutton">
+</form>
+</div>
+
 </html>
-
